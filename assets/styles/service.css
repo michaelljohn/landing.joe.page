@@ -18,7 +18,6 @@ body {
   color: var(--navy);
 }
 
-/* Hero */
 
 .services_hero {
   padding: 80px 24px 60px;
@@ -57,7 +56,7 @@ body {
   margin: 0;
 }
 
-/* Grid of service cards */
+
 
 .services_main {
   padding: 0 24px 80px;
@@ -137,7 +136,7 @@ body {
   background: var(--orange);
 }
 
-/* CTA band */
+
 
 .services_cta {
   background: var(--navy);
@@ -178,7 +177,7 @@ body {
   background: #d96f1f;
 }
 
-/* Responsive */
+
 
 @media (max-width: 900px) {
   .services_grid {
