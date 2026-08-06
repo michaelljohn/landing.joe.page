@@ -76,9 +76,6 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 32px;
-  align-items: stretch;
 }
 
 
