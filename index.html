@@ -33,6 +33,17 @@
             <button class="signup">SIGN UP</button>
             <button popovertarget="login" type="button" onclick="page.data='./assets/pages/login.html'" class="login-btn">LOGIN</button>
         </div>
+        <div class="popup">
+          <button class="menu_button" onclick="
+            if(navLinks.style.display === 'flex') {
+              navLinks.style.display = 'none';
+            } else {
+              navLinks.style.display = 'flex';
+            }
+            ">
+            menu
+          </button>
+        </div>
     </nav>
 
     <div id="login" popover>
@@ -264,7 +275,7 @@
       </div>
     </section>
 
-    <section class="newsletter">
+    <!-- <section class="newsletter">
       <div class="newsletter_eyebrow">Receive The Last Offer And News</div>
       <h2 class="newsletter_heading">Create Your Free Acc. Now</h2>
       <p class="newsletter_text">
@@ -275,7 +286,7 @@
         <input type="email" class="newsletter_input" placeholder="your mail address..." required>
         <button type="submit" class="newsletter_button">Join &rarr;</button>
       </form>
-    </section>
+    </section> -->
 
     <footer class="footer">
       <div class="footer_top">

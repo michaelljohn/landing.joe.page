@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+  width: 100%;
+}
 :root {
     --text-dark: #2b2b2b;
     --bg: #f6f3ec;
@@ -543,6 +545,13 @@
     max-width: 70vw;
   }
 
+
+
+  .popup{
+    display: none;
+
+  }
+
   .about-heading{
     color: var(--navy);
     font-weight: 700;
@@ -584,7 +593,7 @@
   .newsroom{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 24px;
+    /* padding: 60px 24px; */
   }
 
   .newsroom_heading{
@@ -833,7 +842,7 @@
   .trusted_avatar--5{ width: 58px; height: 58px; top: 38%;  right: 3%; }
   .trusted_avatar--6{ width: 54px; height: 54px; top: 70%;  right: 10%; }
 
-  .newsletter{
+  /* .newsletter{
     max-width: 700px;
     margin: 0 auto;
     padding: 80px 24px;
@@ -908,7 +917,7 @@
 
   .newsletter_button:hover{
     transform: translateX(4px);
-  }
+  } */
 
   .footer{
   max-width: 1200px;
@@ -1115,9 +1124,11 @@ input::placeholder{
 
 #login{
   width: 40%;
-  height: 70%;
+  height: 69%;
   justify-self: center;
-  align-self: center
+  align-self: center;
+  border: none;
+  border-radius: 8px;
 }
 
 #login::backdrop{
@@ -1166,9 +1177,6 @@ input::placeholder{
       padding: 14px 24px;
     }
 
-    .nav-links {
-      gap: 14px;
-    }
     .nav-links li {
       gap: 14px;
     }
@@ -1239,12 +1247,12 @@ input::placeholder{
     .trusted_avatar--5{ width: 46px; height: 46px; }
     .trusted_avatar--6{ width: 44px; height: 44px; }
 
-    .newsletter{
+    /* .newsletter{
     padding: 60px 20px; 
     }
     .newsletter_heading{
       font-size: 1.6rem;
-    }
+    } */
 }
 
 
@@ -1256,13 +1264,39 @@ input::placeholder{
       width: 100%;
       /* position: relative; */
     }
+    .popup{
+      display: block;
+      button{
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 5px 10px;
+      font-size: 24px;
+      } 
+    }
 
+
+    .nav-links {
+      position: absolute;
+      background-color: white;
+      top: 100%;
+      right: 0;
+      padding: 10px;
+      gap: 14px;
+    }
     .hamburger {
       display: none;
     }
 
     .nav-links {
       display: none;
+
+      li{
+        flex-direction: column;
+      }
+
     }
 
     .nav-actions {
@@ -1407,9 +1441,10 @@ input::placeholder{
     }
 
 
-     .newsroom{
+     /* .newsroom{
     padding: 40px 16px;
-  }
+    } */
+
   .article_title{
     font-size: 0.95rem;
   }
@@ -1422,7 +1457,7 @@ input::placeholder{
   }
 
   .trusted{
-    padding: 48px 16px 60px;
+    padding: 48px 16px 40px;
   }
   .trusted_heading{
     font-size: 1.25rem;
@@ -1438,7 +1473,7 @@ input::placeholder{
     display: none;
   }
 
-   .newsletter{
+   /* .newsletter{
     padding: 48px 16px;
   }
   .newsletter_heading{
@@ -1461,7 +1496,7 @@ input::placeholder{
   .newsletter_button{
     justify-content: center;
     padding: 12px 0;
-  }
+  } */
 
    .footer{
     padding: 40px 16px 20px;
